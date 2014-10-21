@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 //import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.MediaStore.Video.VideoColumns;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -31,9 +32,9 @@ public class GameOver extends Activity {
 		
 		videoManager.setMediaController(mediaController);
 		
-		videoManager.start();
-		
 		new ThreadVideo(this, videoManager).start();
+		
+		videoManager.start();
 	}
 	
 	public void launch_new_intent()

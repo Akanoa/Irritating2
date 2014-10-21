@@ -17,7 +17,7 @@ public class ThreadVideo extends Thread {
     public void run() {
         try{
 
-        	sleep(videoview.getDuration());
+        	sleep(10000);
         	Log.d("yolo", "wait");
         } catch (Exception e) {
 
